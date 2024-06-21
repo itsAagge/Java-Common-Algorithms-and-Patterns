@@ -1,8 +1,16 @@
 package Sorting.Bubblesort;
 
-import static java.util.Collections.swap;
-
 public class Main {
+    public static void main(String[] args) {
+        int[] myInts = {5, 3, 7, 8, 1, 2, 10, 4, 7};
+        bubbleSort(myInts);
+        for (int i = 0; i < myInts.length; i++) {
+            System.out.print(myInts[i]);
+            if (i + 1 < myInts.length) {
+                System.out.print(", ");
+            }
+        }
+    }
     private static void swap(int[] list, int i, int j) {
         int temp = list[i];
         list[i] = list[j];
