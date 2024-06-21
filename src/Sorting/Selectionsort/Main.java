@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public int[] list = new int[10];
+    private int[] list = new int[10];
 
     private void selectionSort() {
         for (int i = 0; i < list.length; i++) {
