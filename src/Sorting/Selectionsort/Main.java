@@ -17,7 +17,6 @@ public class Main {
                     minPos = j;
                 }
             }
-
             if (minPos != i) {
                 list[minPos] = list[i];
                 list[i] = minPos;
