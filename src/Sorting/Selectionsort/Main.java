@@ -5,22 +5,24 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    private int[] list = new int[10];
+    private static void swap(int[] list, int i, int j) {
+        int temp = list[i];
+        list[i] = list[j];
+        list[j] = temp;
+    }
 
-    private void selectionSort() {
-        for (int i = 0; i < list.length; i++) {
+    public static void selectionSort(int[] list) {
+        for(int i = 0; i < list.length; ++i) {
             int minPos = i;
-            int j;
-            for (j = i + 1; j < list.length;
-                 j++) {
-                if(list[i] < list[minPos]) {
+
+            for(int j = i + 1; j < list.length; ++j) {
+                if (list[j] < list[minPos]) {
                     minPos = j;
                 }
             }
-            if (minPos != i) {
-                list[minPos] = list[i];
-                list[i] = minPos;
-            };
+
+            swap(list, i, minPos);
         }
+
     }
 }
