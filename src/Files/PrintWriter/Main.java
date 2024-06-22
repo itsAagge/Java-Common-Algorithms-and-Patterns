@@ -13,12 +13,11 @@ public class Main {
 
     public static void printInFile(String filename) {
         File file = new File(filename);
-        try (PrintWriter printWriter = new PrintWriter(file)){
+        try (PrintWriter printWriter = new PrintWriter(file)) {
 
             for (int i = 1; i <= 10; i++) {
                 printWriter.println(i);
             }
-            printWriter.close();
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
