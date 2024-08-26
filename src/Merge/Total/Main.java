@@ -18,7 +18,8 @@ public class Main {
                 // s1's første tal er mindst
                 result.add(s1.get(index1));
                 index1++;
-            } else { // s2's første tal er mindst result.add(s2.get(index2));
+            } else { // s2's første tal er mindst
+                result.add(s2.get(index2));
                 index2++;
             }
         }
